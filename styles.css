@@ -1,0 +1,36 @@
+/* styles.css */
+
+/* Header */
+.header-title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+    background-color: lightgrey;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: lightgrey;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* NavLink */
+.nav-link {
+    flex: 1;
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
