@@ -10,7 +10,7 @@
 /* Footer */
 footer {
     padding: 10px;
-    background-color: lightgrey;
+    background-color: lightgrey !important;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
