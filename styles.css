@@ -8,14 +8,14 @@
 }
 
 /* Footer */
-.footer {
+footer {
     padding: 10px;
     background-color: lightgrey;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Nav */
-.nav {
+nav {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -24,7 +24,7 @@
 }
 
 /* NavLink */
-.nav-link {
+navlink {
     flex: 1;
 }
 
