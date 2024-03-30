@@ -39,6 +39,12 @@ nav {
     filter: invert(1);
 }
 
+@media only screen and (max-width: 768px) {
+            #laptop-img {
+                display: none;
+            }
+        }
+
 
 
 
