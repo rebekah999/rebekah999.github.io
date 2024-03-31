@@ -39,7 +39,7 @@ nav {
     filter: invert(1);
 }
 
-.navbar-toggler-icon {
+.navbar-toggler {
     border: none; /* Remove border */
 }
 
