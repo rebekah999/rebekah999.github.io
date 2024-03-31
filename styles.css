@@ -40,7 +40,7 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-            #laptop-img {
+            .hide-img {
                 display: none;
             }
         }
