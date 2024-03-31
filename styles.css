@@ -39,7 +39,7 @@ nav {
     filter: invert(1);
 }
 
-.navbar-toggler {
+#app > div > nav > div > button {
     border: none; /* Remove border */
 }
 
