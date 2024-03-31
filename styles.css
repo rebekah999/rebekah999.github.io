@@ -38,12 +38,21 @@ nav {
 .icon {
     filter: invert(1);
 }
-
+/*
 @media only screen and (max-width: 768px) {
             .hide-img {
                 display: none;
             }
         }
+*/
+
+@media only screen and (max-width: 768px) {
+    /* Style to convert columns to rows */
+    .col-to-row {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
