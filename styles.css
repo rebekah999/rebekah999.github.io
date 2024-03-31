@@ -50,7 +50,7 @@ nav {
     /* Style to convert columns to rows */
     .col-to-row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
