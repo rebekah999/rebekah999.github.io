@@ -38,15 +38,15 @@ nav {
 .icon {
     filter: invert(1);
 }
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+#app > div > nav > div > button {
+    border: none; /* Remove border from nav icon */
 }
 
-
-
-
-
+/* Media query for small screens */
+@media screen and (max-width: 769px) {
+  /* Stacks img and page content on small screens */
+  #home > div, #contact > div {
+    display: flex;
+    flex-direction: column;
+  }
+}
