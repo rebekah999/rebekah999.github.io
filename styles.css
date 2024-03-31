@@ -38,6 +38,11 @@ nav {
 .icon {
     filter: invert(1);
 }
+
+.navbar-toggler-icon {
+    border: none; /* Remove border */
+}
+
 /*
 @media only screen and (max-width: 768px) {
             .hide-img {
