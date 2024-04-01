@@ -29,8 +29,8 @@ footer {
 }
 
 /* Icon */
-.icon {
-    filter: invert(1);
+#nav-bar .icon {
+    filter: invert(1); /* Makes icons visible on dark nav bar */
 }
 
 /* Remove border from nav icon */
