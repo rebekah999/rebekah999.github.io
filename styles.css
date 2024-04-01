@@ -38,8 +38,17 @@ nav {
 .icon {
     filter: invert(1);
 }
+
 #app > div > nav > div > button {
     border: none; /* Remove border from nav icon */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    /* Remove outline from nav icon */
+    outline: none;
+    box-shadow: none;
 }
 
 /* Media query for small screens */
