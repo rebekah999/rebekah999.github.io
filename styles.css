@@ -1,19 +1,6 @@
 /* styles.css */
 
-/* Header */
-.header-title {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-/* Footer */
-footer {
-    padding: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Nav */
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -35,13 +22,23 @@ nav {
     margin: 2em;
 }
 
+/* Footer */
+footer {
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon */
 .icon {
     filter: invert(1);
 }
+
+/* Remove border from nav icon */
 #app > div > nav > div > button {
-    border: none; /* Remove border from nav icon */
+    border: none;
 }
 
+/* Remove outline and box shadow from nav toggler */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -49,24 +46,22 @@ nav {
     box-shadow: none;
 }
 
+/* Padding for home and contact */
 #home, #contact {
-    padding:0;
+    padding: 0;
 }
 
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
-  /* Stacks img and page content on small screens */
-  #home > div, #contact > div {
-    display: flex;
-    flex-direction: column;
-  }
-    
-}
-@media screen and (max-width: 768px) {
-  /* Stacks img and page content on small screens */
-  #home-side-content, #contact-side-content {
-    width: 80%; /* Make both columns take up full width */
-  }
+    /* Stacks img and page content on small screens */
+    #home > div, #contact > div {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Make both columns take up full width on small screens */
+    #home-side-content, #contact-side-content {
+        width: 80%;
+    }
 }
 
 
