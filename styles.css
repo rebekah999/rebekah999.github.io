@@ -30,15 +30,14 @@ nav {
 /* Content */
 .content {
     display: flex;
-    flex-direction: column;
     height: 100vh;
+    flex-direction: column;
     margin: 2em;
 }
 
 .icon {
     filter: invert(1);
 }
-
 #app > div > nav > div > button {
     border: none; /* Remove border from nav icon */
 }
@@ -46,16 +45,29 @@ nav {
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    /* Remove outline from nav icon */
     outline: none;
     box-shadow: none;
 }
 
+#home, #contact {
+    padding:0;
+}
+
 /* Media query for small screens */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   /* Stacks img and page content on small screens */
   #home > div, #contact > div {
     display: flex;
     flex-direction: column;
   }
+    
 }
+@media screen and (max-width: 768px) {
+  /* Stacks img and page content on small screens */
+  #home-side-content, #contact-side-content {
+    width: 80%; /* Make both columns take up full width */
+  }
+}
+
+
+
