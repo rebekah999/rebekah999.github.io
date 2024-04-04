@@ -51,7 +51,7 @@ projects_list = [
         "technology": "Python"
     },
     {
-        "image_src": "https://rebekahfowler.com/Project%20Previews/Term%20Deposit%20Campaign.png",
+        "image_src": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Project%20Previews/Term%20Deposit%20Campaign.png,
         "title": "Marketing Analysis: Term Deposit Campaign",
         "description": "This storyboard is designed to compare the success of the current term deposit marketing campaign with the previous one, as well as to identify the demographic groups that responded best to the current campaign.",
         "button_text": "Link to Tableau Public",
@@ -59,7 +59,7 @@ projects_list = [
         "technology": "Tableau"
     }, 
     {
-        "image_src": "https://rebekahfowler.com/Project%20Previews/Bike%20Store%20Sales%20Analysis.png",
+        "image_src": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Project%20Previews/Bike%20Store%20Sales%20Analysis.png",
         "title": "Bike Store Sales Analysis",
         "description": "A SQL file with queries providing insights into order processing, revenue analysis, customer behavior, inventory management, and employee performance.",
         "button_text": "Link to GitHub Repository",
@@ -67,7 +67,7 @@ projects_list = [
         "technology": "SQL"
     },
     {
-        "image_src": "https://rebekahfowler.com/Project%20Previews/2022%20Milwaukee%20Property%20Sales.png",
+        "image_src": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Project%20Previews/2022%20Milwaukee%20Property%20Sales.png",
         "title": "2022 Milwaukee Property Sales",
         "description": "An Excel dashboard analyzing residential property sales in Milwaukee.",
         "button_text": "Link to GitHub Repository",
@@ -75,7 +75,7 @@ projects_list = [
         "technology": "Excel"
     },
     {
-        "image_src": "https://rebekahfowler.com/Project%20Previews/Employee%20Churn%20Prediction.png",
+        "image_src": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Project%20Previews/Employee%20Churn%20Prediction.png",
         "title": "Salifort Motors - Employee Churn Prediction",
         "description": "A Jupyter Notebook where I used a logistic regression to predict whether an employee will churn.",
         "button_text": "Link to GitHub Repository",
