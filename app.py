@@ -51,7 +51,7 @@ projects_list = [
         "technology": "Python"
     },
     {
-        "image_src": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Project%20Previews/Term%20Deposit%20Campaign.png,
+        "image_src": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Project%20Previews/Term%20Deposit%20Campaign.png",
         "title": "Marketing Analysis: Term Deposit Campaign",
         "description": "This storyboard is designed to compare the success of the current term deposit marketing campaign with the previous one, as well as to identify the demographic groups that responded best to the current campaign.",
         "button_text": "Link to Tableau Public",
