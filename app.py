@@ -43,7 +43,7 @@ about_content = "Hello, I'm Rebekah Fowler, a freelance data analyst with two ye
 # List of dictionaries for portfolio projects
 projects_list = [
     {
-        "image_src": "https://rebekahfowler.com/Project%20Previews/S&P%20500%20Database%20Pipeline.png",
+        "image_src": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Project%20Previews/S&P%20500%20Database%20Pipeline.png",
         "title": "S&P 500 Database Pipeline",
         "description": "This notebook enables users to analyze SPY options trading data based on a specified expiration date. It calculates SPY's trading range for the selected date and retrieves all options that traded at the money (ATM) on that day and expire on the given date. Subsequently, it uploads both the underlying stock data and options data to a locally hosted PostgreSQL database.",
         "button_text": "Link to GitHub Repository",
