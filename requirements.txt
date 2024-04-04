@@ -1,0 +1,4 @@
+dash==2.14.2
+dash_bootstrap_components
+dash_mantine_components
+gunicorn
