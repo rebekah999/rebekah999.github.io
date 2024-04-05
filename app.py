@@ -260,6 +260,7 @@ portfolio_page = html.Div([
 contact_side_content = [
     html.H2("Where you can reach me", className="contact-title"),
     #html.P("You can reach out to me using the following contact details.", className="contact-description"),
+    html.H5("contact@rebekahfowler.com", className="contact-email"),
     social_media_icons_with_text
 ]
 
