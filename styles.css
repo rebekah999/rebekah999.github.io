@@ -73,6 +73,9 @@ footer {
     .home-title {
         padding-top: 50px !important;
     } 
+    .contact-email {
+        font-size :14px;
+    }
 }
 
 
