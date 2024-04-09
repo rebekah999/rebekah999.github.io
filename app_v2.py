@@ -226,17 +226,21 @@ home_page = html.Div([
 ], id="home", className="col-to-row")
 """
 # Home page layout
-home_side_content = [
+home_side_content = html.Div([
     html.Div([
-        html.Img(src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", className="background-image"),
-        html.Div([
-            html.Img(src=headshot_src, className="headshot-image"),
-            html.H2("Hello, I'm Rebekah!", className="home-title"),
-            html.P("Data Analyst and Data Storyteller", className="home-description"),
-            html.A(dmc.Button("See My Work", variant="light"), href='/portfolio')
-        ], className="overlay-content")
-    ])
-]
+        html.Img(src=headshot_src, className="headshot-image"),
+        html.H2("Hello, I'm Rebekah!", className="home-title"),
+        html.P("Data Analyst and Data Storyteller", className="home-description"),
+        html.A(dmc.Button("See My Work", variant="light"), href='/portfolio')
+    ], className="overlay-content")
+], style={
+    'background-image': 'url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+    'background-size': 'cover',
+    'background-repeat': 'no-repeat',
+    'background-position': 'center',
+    'height': '100vh'
+})
+
 
 home_page = html.Div([
     dbc.Row([
