@@ -78,44 +78,45 @@ footer {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: relative; 
+    margin-bottom: -500px;
+
+
 }
 
 .headshot-image {
     width: 150px; /* Adjust size as needed */
     height: 150px; /* Adjust size as needed */
     border-radius: 50%;
-    position: absolute;
-    top: 20px; /* Adjust position as needed */
+    position: relative;
+    top: -200px; /* Adjust position as needed */
     left: calc(50% - 75px); /* Adjust position as needed */
     border: 3px solid white; /* Optional - add a border */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    
 }
 
 
 .home-description {
-    position: absolute;
-    top: 70%;
+    position: relative;
+    top: -150px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
 }
 .home-title {
-    position: absolute;
-    top: 60%;
+    position: relative;
+    top: -150px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
 }
-.headshot-image {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-}
+
 
 
 .overlay-content h2,
@@ -125,8 +126,8 @@ footer {
 }
 
 #home-side-content > div > div > a > button {
-    position: absolute;
-    top: 90%;
+    position: relative;
+    top: -50px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
