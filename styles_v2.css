@@ -64,9 +64,6 @@ footer {
         flex-direction: column;
     }
     /* Make both columns take up full width on small screens */
-     #home-side-content {
-        width: 94%;
-    }
     #contact-side-content {
         width: 80%;
     }
