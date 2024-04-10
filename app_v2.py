@@ -227,12 +227,14 @@ home_page = html.Div([
 """
 # Home page layout
 home_side_content = html.Div([
-    html.Div([
-        html.Img(src=headshot_src, className="headshot-image"),
-        html.H2("Hello, I'm Rebekah!", className="home-title"),
-        html.P("Data Analyst and Data Storyteller", className="home-description"),
-        html.A(dmc.Button("See My Work", variant="light"), href='/portfolio')
-    ], className="overlay-content")
+        dbc.Row([
+            dbc.Col([
+                html.H2("Hello, I'm Rebekah!", className="home-title"),
+                html.P("Data Analyst and Data Storyteller", className="home-description"),
+                html.A(dmc.Button("See My Work", variant="light"), href='/portfolio')
+            ], md=6, className="order-2 order-md-1"),
+            dbc.Col(html.Img(src=headshot_src, className="headshot-image"), md=6, className="order-1 order-md-1")
+        ], className="overlay-content")
 ], style={
     'background-image': 'url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     'background-size': 'cover',
@@ -241,12 +243,9 @@ home_side_content = html.Div([
     'height': '100vh'
 })
 
-
 home_page = html.Div([
-    dbc.Row([
-        dbc.Col(home_side_content, width={"sm": 12, "md": 6}, id="home-side-content"),
-    ])
-], id="home", className="col-to-row")
+    home_side_content
+], id="home")
 
 
 # About page layout
