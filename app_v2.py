@@ -226,26 +226,24 @@ home_page = html.Div([
 ], id="home", className="col-to-row")
 """
 # Home page layout
-home_side_content = html.Div([
-        dbc.Row([
-            dbc.Col([
-                html.H2("Hello, I'm Rebekah!", className="home-title"),
-                html.P("Data Analyst and Data Storyteller", className="home-description"),
-                html.A(dmc.Button("See My Work", variant="light"), href='/portfolio')
-            ], md=6, className="order-2 order-md-1"),
-            dbc.Col(html.Img(src=headshot_src, className="headshot-image"), md=6, className="order-1 order-md-1")
-        ], className="overlay-content")
-], style={
+home_side_content = dbc.Row([
+        dbc.Col([
+            html.H2("Hello, I'm Rebekah!", className="home-title"),
+            html.P("Data Analyst and Data Storyteller", className="home-description"),
+            html.A(dmc.Button("See My Work", variant="light", className="d-block mx-auto"), href='/portfolio', style={'width': 'fit-content'})
+        ], md=6, className="d-flex align-items-center justify-content-center flex-column order-2 order-md-1"),
+        dbc.Col(html.Img(src=headshot_src, className="headshot-image"), md=6, className="d-flex align-items-center justify-content-center flex-column order-1 order-md-1")
+    ], className="overlay-content")
+
+home_page = html.Div([
+    home_side_content
+], id="home", style={
     'background-image': 'url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     'background-size': 'cover',
     'background-repeat': 'no-repeat',
     'background-position': 'center',
     'height': '100vh'
 })
-
-home_page = html.Div([
-    home_side_content
-], id="home")
 
 
 # About page layout
