@@ -1,6 +1,8 @@
 
 /* styles.css */
-
+a {
+    text-decoration: none;
+}
 /* Navigation Bar */
 nav {
     display: flex;
@@ -79,23 +81,12 @@ footer {
 .headshot-image {
     width: 150px;
     height: 150px;
-    border: 3px solid white;
+    border: 3px solid black;
     color: white;
     left: 50%;
     display: block;
     margin: 0 auto;
 }
-
-
-
-
-.home-description,
-.home-title{
-    text-align: center;
-    color: white;
-
-}
-
 
 .overlay-content h2,
 .overlay-content p,
@@ -105,15 +96,6 @@ footer {
 
 }
 
-#home-side-content > div > div > a > button {
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-}
-#home-side-content > div > div > a  {
-    text-decoration: none;
-}
 
 #contact-side-content {
     margin-bottom: 0px !important;
@@ -121,9 +103,8 @@ footer {
 .overlay-content {
   position: relative; /* Position the background text */
   top: 20%; /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
+  background: rgba(255, 255, 255, 1); /* Fallback color */
+  background: rgba(255, 255, 255, 1); /* Black background with 0.5 opacity */
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
 }
