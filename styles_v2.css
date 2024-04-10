@@ -1,3 +1,4 @@
+
 /* styles.css */
 
 /* Navigation Bar */
@@ -116,5 +117,13 @@ footer {
 #contact-side-content {
     margin-bottom: 0px !important;
 }
-
+.overlay-content {
+  position: relative; /* Position the background text */
+  top: 20%; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
 
