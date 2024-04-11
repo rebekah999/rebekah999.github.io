@@ -101,12 +101,18 @@ footer {
 #contact-side-content {
     margin-bottom: 0px !important;
 }
+
 .overlay-content {
   position: relative; /* Position the background text */
-  top: 20%; /* At the bottom. Use top:0 to append it to the top */
+  top: 50%; /* At the bottom. Use top:0 to append it to the top */
   background: rgba(255, 255, 255, 1); /* Fallback color */
   background: rgba(255, 255, 255, 1); /* Black background with 0.5 opacity */
-  width: 100%; /* Full width */
+  width: 90%; /* Full width */
   padding: 20px; /* Some padding */
+  margin: 0 auto; /* Center horizontally */
+  transform: translateY(-50%); /* Adjust to vertically center */
 }
+
+
+
 
