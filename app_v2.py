@@ -31,11 +31,20 @@ headshot_img = dmc.Image(
 )
 
 # Image of a laptop (for contact page)
+"""
 laptop_img = dmc.Image(
             src=laptop_src,
             alt="Picture of laptop",
             id="laptop-img"
 )
+"""
+laptop_img = dmc.Image(
+    src=laptop_src,
+    alt="Picture of laptop",
+    id="laptop-img",
+    className="background-image"
+)
+
 
 footer_content = dbc.Row([ 
         html.P("© 2024 Rebekah Fowler. All rights reserved."),
@@ -286,7 +295,7 @@ contact_side_content = [
 
 contact_page = html.Div([
     dbc.Row([
-        dbc.Col(laptop_img, width={"sm": 12, "md": 6}),
+        dbc.Col(width={"sm": 12, "md": 6}, className="background-image"),
         dbc.Col(contact_side_content, id="contact-side-content", style={"margin": "3em", "text-align": "center"}, width={"sm": 12, "md": 6})
     ])
 ], id="contact")
