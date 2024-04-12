@@ -305,7 +305,7 @@ external_styles = "https://rebekah999.github.io/styles.css"
 
 # Initialize Dash app with external stylesheets
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX, external_styles])
-#server = app.server
+server = app.server
 
 app.title = "Rebekah Fowler"
 
