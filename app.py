@@ -289,19 +289,19 @@ portfolio_page = html.Div([
 contact_side_content = [
     html.H2("Where you can reach me", className="contact-title"),
     #html.P("You can reach out to me using the following contact details.", className="contact-description"),
-    html.H5("contact@rebekahfowler.com", className="contact-email"),
-    social_media_icons_with_text
+    html.Div([html.H5("contact@rebekahfowler.com", className="contact-email"),
+    social_media_icons_with_text], className= "d-flex align-items-center justify-content-center flex-column")
 ]
 
 contact_page = html.Div([
     dbc.Row([
         dbc.Col(width={"sm": 12, "md": 6}, className="background-image"),
-        dbc.Col(contact_side_content, id="contact-side-content", style={"margin": "3em", "text-align": "center"}, width={"sm": 12, "md": 6})
+        dbc.Col(contact_side_content, id="contact-side-content", style={"text-align": "center"}, width={"sm": 12, "md": 6})
     ])
 ], id="contact")
 
 # URL to an external CSS file
-external_styles = "https://rebekah999.github.io/styles_v2.css"
+external_styles = "https://rebekah999.github.io/styles.css"
 
 # Initialize Dash app with external stylesheets
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX, external_styles])
