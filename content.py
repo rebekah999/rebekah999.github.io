@@ -128,7 +128,7 @@ linkedin_link = "https://www.linkedin.com/in/rebekah-fowler999"
 medium_link = "https://medium.com/@rebekah.fowler"
 
 # My headshot image (for home page)
-headshot_src = "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Rebekah-profile-images-4.jpeg"
+headshot_src = "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/headshot-img.png"
 #"https://images.unsplash.com/photo-1709705412674-68b8f1431852?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
 # Image of a laptop (for contact page)
