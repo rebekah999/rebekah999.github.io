@@ -31,11 +31,20 @@ headshot_img = dmc.Image(
 )
 
 # Image of a laptop (for contact page)
+"""
 laptop_img = dmc.Image(
             src=laptop_src,
             alt="Picture of laptop",
             id="laptop-img"
 )
+"""
+laptop_img = dmc.Image(
+    src=laptop_src,
+    alt="Picture of laptop",
+    id="laptop-img",
+    className="background-image"
+)
+
 
 footer_content = dbc.Row([ 
         html.P("© 2024 Rebekah Fowler. All rights reserved."),
@@ -210,7 +219,7 @@ def generate_education_timeline(certificates_list):
 education_timeline = generate_education_timeline(certificates_list)
 
 # Page Layouts
-
+"""
 # Home page layout
 home_side_content = [
     html.H2("Hello, I'm Rebekah!", className="home-title", style = {"padding-top":"250px", "padding-bottom":"0px"}),
@@ -224,6 +233,26 @@ home_page = html.Div([
         dbc.Col(headshot_img, className="hide-img", width={"sm": 12, "md": 6})
     ])
 ], id="home", className="col-to-row")
+"""
+# Home page layout
+home_side_content = dbc.Row([
+        dbc.Col([
+            html.H2("Hello, I'm Rebekah!", className="home-title"),
+            html.P("Data Analyst and Data Storyteller", className="home-description"),
+            html.A(dmc.Button("See My Work", variant="light", className="d-block mx-auto"), href='/portfolio', style={'width': 'fit-content'})
+        ], md=6, className="d-flex align-items-center justify-content-center flex-column order-2 order-md-1"),
+        dbc.Col(html.Img(src=headshot_src, className="headshot-image"), md=6, className="d-flex align-items-center justify-content-center flex-column order-1 order-md-1")
+    ], className="overlay-content")
+
+home_page = html.Div([
+    home_side_content
+], id="home", style={
+    'background-image': 'url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+    'background-size': 'cover',
+    'background-repeat': 'no-repeat',
+    'background-position': 'center',
+    'height': '100vh'
+})
 
 
 # About page layout
@@ -260,14 +289,14 @@ portfolio_page = html.Div([
 contact_side_content = [
     html.H2("Where you can reach me", className="contact-title"),
     #html.P("You can reach out to me using the following contact details.", className="contact-description"),
-    html.H5("contact@rebekahfowler.com", className="contact-email"),
-    social_media_icons_with_text
+    html.Div([html.H5("contact@rebekahfowler.com", className="contact-email"),
+    social_media_icons_with_text], className= "d-flex align-items-center justify-content-center flex-column")
 ]
 
 contact_page = html.Div([
     dbc.Row([
-        dbc.Col(laptop_img, width={"sm": 12, "md": 6}),
-        dbc.Col(contact_side_content, id="contact-side-content", style={"margin": "3em", "text-align": "center"}, width={"sm": 12, "md": 6})
+        dbc.Col(width={"sm": 12, "md": 6}, className="background-image"),
+        dbc.Col(contact_side_content, id="contact-side-content", style={"text-align": "center"}, width={"sm": 12, "md": 6})
     ])
 ], id="contact")
 
@@ -276,7 +305,7 @@ external_styles = "https://rebekah999.github.io/styles.css"
 
 # Initialize Dash app with external stylesheets
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX, external_styles])
-server = app.server
+#server = app.server
 
 app.title = "Rebekah Fowler"
 
