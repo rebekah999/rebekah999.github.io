@@ -58,38 +58,6 @@ footer {
     padding: 0;
 }
 
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-    /* Stacks img and page content on small screens */
-    #home > div, #contact > div {
-        display: flex;
-        flex-direction: column;
-    }
-    /* Make both columns take up full width on small screens */
-    #contact-side-content {
-        width: 100%;
-        margin: auto;
-    }
-    .home-title {
-        padding-top: 50px !important;
-    } 
-    .contact-email {
-        font-size :14px;
-    }
-    
-    .overlay-content {
-        width: 90%;
-    }
-    .headshot-image {
-        width: 150px !important;
-        height: 150px !important;
-    }
-    #contact {
-    margin-bottom:2em;
-}
-}
-
-
 .headshot-image {
     width: 200px;
     height: 200px;
@@ -138,4 +106,39 @@ footer {
     color: black !important;
     background-color: transparent !important;
     border-color: black !important;
+}
+
+#portfolio {
+    height: 100%;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    /* Stacks img and page content on small screens */
+    #home > div, #contact > div {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Make both columns take up full width on small screens */
+    #contact-side-content {
+        width: 100%;
+        margin: auto;
+    }
+    .home-title {
+        padding-top: 50px !important;
+    } 
+    .contact-email {
+        font-size :14px;
+    }
+    
+    .overlay-content {
+        width: 90%;
+    }
+    .headshot-image {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    #contact {
+    margin-bottom:2em;
+}
 }
