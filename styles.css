@@ -84,6 +84,9 @@ footer {
         width: 150px !important;
         height: 150px !important;
     }
+    #contact {
+    margin-bottom:2em;
+}
 }
 
 
