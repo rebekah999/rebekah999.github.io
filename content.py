@@ -34,7 +34,7 @@ skills_list = [
         "image": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Website%20Icons/aws.png",
         "label": "AWS",
         "description": "",
-        "content": "Route 53, Lightsail, Lambda"
+        "content": "Route 53, Lightsail, Lambda, Amazon EventBridge"
     }
 ]
 
