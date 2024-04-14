@@ -31,7 +31,7 @@ skills_list = [
     },
     {
         "id": "aws-skills",
-        "image": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Website%20Icons/aws.png",
+        "image": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Website%20Icons/aws.svg",
         "label": "AWS",
         "description": "Amazon Web Services",
         "content": "Route 53, Lightsail, Lambda, Amazon EventBridge"
