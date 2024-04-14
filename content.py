@@ -28,6 +28,13 @@ skills_list = [
         "label": "Excel",
         "description": "Microsoft 365",
         "content": "Data Connections, Data Entry and Formatting, Formulas and Functions, Data Cleaning and Transformation, PivotTables, Charts and Graphs, Conditional Formatting, Data Analysis Tools, Data Visualization, Data Tables, Data Protection, VLOOKUP, Slicers, Interactive dashboard Design"
+    },
+    {
+        "id": "aws-skills",
+        "image": "https://raw.githubusercontent.com/rebekah999/rebekah999.github.io/main/Website%20Icons/aws.png",
+        "label": "AWS",
+        "description": "",
+        "content": "Route 53, Lightsail, Lambda"
     }
 ]
 
