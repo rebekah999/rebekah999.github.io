@@ -111,10 +111,6 @@ footer {
 #portfolio, #about, #skills {
     padding-bottom: 2em;
 }
-#mantine-69ddghu0h-control-aws-skills > div.mantine-pildck.mantine-Accordion-label > div > div.mantine-Avatar-root.mantine-1m9aalz > img {
-    height: auto;
-    margin-top: .6em;
-}
 
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
