@@ -294,6 +294,16 @@ app.title = "Rebekah Fowler"
 
 # Defining app layout
 app.layout = html.Div([
+    html.Script(src="https://www.googletagmanager.com/gtag/js?id=G-QSDE77Z4Z7", async_=True),
+    html.Script(
+        """
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QSDE77Z4Z7');
+        """
+    ),
     html.Meta(name='viewport', content='width=device-width, initial-scale=1'),
     html.Link(
         rel='shortcut icon',
