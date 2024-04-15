@@ -31,13 +31,6 @@ headshot_img = dmc.Image(
 )
 
 # Image of a laptop (for contact page)
-"""
-laptop_img = dmc.Image(
-            src=laptop_src,
-            alt="Picture of laptop",
-            id="laptop-img"
-)
-"""
 laptop_img = dmc.Image(
     src=laptop_src,
     alt="Picture of laptop",
@@ -134,7 +127,7 @@ def create_accordion_label(label, image, description):
     return dmc.AccordionControl(
         dmc.Group(
             [
-                dmc.Avatar(src=image, size="lg"),
+                dmc.Avatar(src=image, size="lg", className = "skills-img"),
                 html.Div(
                     [
                         dmc.Text(label),
