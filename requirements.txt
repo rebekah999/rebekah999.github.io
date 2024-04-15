@@ -1,4 +1,4 @@
 dash==2.14.2
 dash_bootstrap_components
-dash_mantine_components
+dash_mantine_components==0.12.1
 gunicorn
