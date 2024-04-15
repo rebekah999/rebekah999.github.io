@@ -145,6 +145,7 @@ def create_accordion_content(content):
 skills_accordion = dmc.Accordion(
     chevronPosition="right",
     variant="contained",
+    id = "accordion",
     children=[
         dmc.AccordionItem(
             [
