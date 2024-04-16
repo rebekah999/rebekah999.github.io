@@ -294,10 +294,10 @@ app.title = "Rebekah Fowler"
 
 app.scripts.config.serve_locally = False
 app.scripts.append_script({
-    'external_url': 'https://cdn.jsdelivr.net/gh/rebekah999/rebekah999.github.io/async_src.js'
+    'external_url': 'https://cdn.jsdelivr.net/gh/rebekah999/rebekah999.github.io@8ed5518/async_src.js'
 })
 app.scripts.append_script({
-    'external_url': 'https://cdn.jsdelivr.net/gh/rebekah999/rebekah999.github.io/gtag.js'
+    'external_url': 'https://cdn.jsdelivr.net/gh/rebekah999/rebekah999.github.io@9b6df67/gtag.js'
 })
 
 # Defining app layout
