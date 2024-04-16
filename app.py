@@ -292,6 +292,14 @@ server = app.server
 
 app.title = "Rebekah Fowler"
 
+app.scripts.config.serve_locally = False
+app.scripts.append_script({
+    'external_url': 'https://cdn.jsdelivr.net/gh/rebekah999/rebekah999.github.io/async_src.js'
+})
+app.scripts.append_script({
+    'external_url': 'https://cdn.jsdelivr.net/gh/rebekah999/rebekah999.github.io/gtag.js'
+})
+
 # Defining app layout
 app.layout = html.Div([
     html.Meta(name='viewport', content='width=device-width, initial-scale=1'),
